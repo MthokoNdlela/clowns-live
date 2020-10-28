@@ -2,6 +2,7 @@ asgiref==3.2.10
 beautifulsoup4==4.9.3
 dj-database-url==0.5.0
 Django==3.1.2
+django-filter==2.4.0
 django-htmlmin==0.11.0
 gunicorn==20.0.4
 html5lib==1.1

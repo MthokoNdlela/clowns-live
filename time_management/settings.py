@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '$29547nn9rz_%uoew6$d4m^u$1=)m$7=u8olj-fo^$eruzgzkk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['clowns-management.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = []
 
 SECURE_CONTENT_TYPE_NOSNIFF = True
 
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'users',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
