@@ -27,6 +27,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['clowns-management.herokuapp.com', '127.0.0.1']
 
+SECURE_CONTENT_TYPE_NOSNIFF = True
+
 
 # Application definition
 
@@ -50,6 +52,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+CSRF_COOKIE_SECURE = True
 
 ROOT_URLCONF = 'time_management.urls'
 
