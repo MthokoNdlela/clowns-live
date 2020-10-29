@@ -6,7 +6,10 @@ from django.contrib.auth.decorators import login_required
 from .models import *
 from .forms import OrderForm, CreateUserForm
 from django.contrib import messages
+from django.views.decorators.csrf import csrf_protect
 
+
+@csrf_protect
 def registerPage(request):
 	if request.user.is_authenticated:
 		return redirect('home')
